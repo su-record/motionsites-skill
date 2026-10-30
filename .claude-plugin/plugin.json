@@ -1,0 +1,10 @@
+{
+  "name": "motionsites-web-builder",
+  "description": "Cinematic website design, implementation, and screenshot review for Claude Code and Codex.",
+  "version": "1.0.0",
+  "author": { "name": "su-record" },
+  "homepage": "https://github.com/su-record/motionsites-skill",
+  "repository": "https://github.com/su-record/motionsites-skill",
+  "license": "MIT",
+  "keywords": ["web-design", "landing-page", "claude-code", "codex", "agent-skills"]
+}

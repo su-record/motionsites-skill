@@ -1,0 +1,9 @@
+.vibe/
+.venv/
+__pycache__/
+*.py[cod]
+dist/
+shots/
+skills/*/.resources/
+skills/*/examples/
+skills/*/media/

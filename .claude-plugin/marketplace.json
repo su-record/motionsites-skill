@@ -1,0 +1,12 @@
+{
+  "name": "su-record-motionsites",
+  "description": "A shared cinematic web design skill for Claude Code and Codex.",
+  "owner": { "name": "su-record" },
+  "plugins": [
+    {
+      "name": "motionsites-web-builder",
+      "source": "./",
+      "description": "Cinematic web design with a shared Claude Code and Codex skill."
+    }
+  ]
+}
