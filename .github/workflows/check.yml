@@ -1,0 +1,20 @@
+name: Check skill
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.1.0
+        with:
+          python-version: '3.12'
+      - run: python -m pip install playwright
+      - run: python -m playwright install --with-deps chromium
+      - run: python -m unittest discover -s tests -v
+      - run: python scripts/build_release.py
+      - uses: actions/upload-artifact@v7.0.2
+        with:
+          name: motionsites-web-builder
+          path: dist/*.zip
