@@ -156,8 +156,8 @@ the different skill layout and checking licenses before publishing. The optional
 resource library remains pinned separately in `references/upstream.json`.
 
 The upstream project already uses the `v1.0.0` tag. Shared fork releases start at
-`v1.0.1`; the previous standalone release is preserved at
-[motionsites-skill-standalone v1.0.0](https://github.com/su-record/motionsites-skill-standalone/releases/tag/v1.0.0).
+`v1.0.1`; the previous standalone release and its original ZIP remain available
+as [v1.0.0](https://github.com/su-record/motionsites-skill/releases/tag/v1.0.0) in this fork.
 The current skill and ZIP exclude the restricted collections. Original files
 remain in the preserved upstream Git history under their original terms.
 
