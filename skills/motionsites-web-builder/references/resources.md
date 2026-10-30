@@ -3,7 +3,8 @@
 The original `examples/` and `media/` are © MotionSites. Its license permits
 using them to build websites, including client sites, with this skill, and
 prohibits reselling or redistributing them as a prompt or media collection.
-This repository and its release ZIP exclude those folders.
+This distributed skill and its release ZIP exclude those folders. Original
+files remain in the preserved upstream Git history under their original terms.
 
 If the user wants that library and the host permits network access and Git,
 fetch it for local use:

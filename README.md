@@ -134,6 +134,33 @@ design quality or guarantee that every host UI will install the package.
 The release ZIP is suitable for hosts accepting uploaded Agent Skills. Actual
 Claude web/desktop upload behavior is not covered by the local checks.
 
+## Upstream history
+
+This repository is a GitHub fork of
+[Motionsites-AI/claude-skill](https://github.com/Motionsites-AI/claude-skill).
+Its history preserves both the upstream commits and the original standalone
+Claude Code/Codex adaptation. The shared skill stays at
+`skills/motionsites-web-builder` so the installation paths above continue to work.
+
+To inspect incoming upstream changes:
+
+```bash
+git remote add upstream https://github.com/Motionsites-AI/claude-skill.git
+git fetch --no-tags upstream main
+git log --oneline HEAD..upstream/main
+git diff --stat HEAD...upstream/main
+```
+
+Add the remote only if it is absent. Review and merge relevant changes, resolving
+the different skill layout and checking licenses before publishing. The optional
+resource library remains pinned separately in `references/upstream.json`.
+
+The upstream project already uses the `v1.0.0` tag. Shared fork releases start at
+`v1.0.1`; the previous standalone release is preserved at
+[motionsites-skill-standalone v1.0.0](https://github.com/su-record/motionsites-skill-standalone/releases/tag/v1.0.0).
+The current skill and ZIP exclude the restricted collections. Original files
+remain in the preserved upstream Git history under their original terms.
+
 ## License and provenance
 
 The included instructions, references, and scripts are MIT-licensed. Preserve
